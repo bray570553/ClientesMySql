@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 import resources.Resources;
 
 
-
+//
 public class ImplPerson {
     
     ArrayList<Worker> lista= new ArrayList<>();

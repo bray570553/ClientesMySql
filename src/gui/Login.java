@@ -31,12 +31,15 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
         jLabel_titulo = new javax.swing.JLabel();
         jLabel_usuario = new javax.swing.JLabel();
         jLabel_password = new javax.swing.JLabel();
         jTextField_usuario = new javax.swing.JTextField();
         jPasswordField_pswd = new javax.swing.JPasswordField();
         jButton_login = new javax.swing.JButton();
+
+        jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -157,6 +160,7 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton_login;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel_password;
     private javax.swing.JLabel jLabel_titulo;
     private javax.swing.JLabel jLabel_usuario;

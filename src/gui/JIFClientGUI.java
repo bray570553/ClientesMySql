@@ -84,6 +84,7 @@ public class JIFClientGUI extends javax.swing.JInternalFrame {
         jPasswordField_paswd = new javax.swing.JPasswordField();
         jLabel_codiog_cliente = new javax.swing.JLabel();
         jTextField_codigo_cliente = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         jButton_Eliminar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton_Eliminar.setForeground(new java.awt.Color(204, 102, 0));
@@ -206,22 +207,24 @@ public class JIFClientGUI extends javax.swing.JInternalFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(150, 150, 150)
                                 .addComponent(jLabel_titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jRadioButton2_Juridica)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jRadioButton2_Juridica)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jLabel_tipoCli)
+                                    .addGap(26, 26, 26)
+                                    .addComponent(jRadioButton1_Natural)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(147, 147, 147)
+                                .addComponent(jTextField_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(49, 49, 49)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButton_Actualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton_Eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel_tipoCli)
-                                        .addGap(26, 26, 26)
-                                        .addComponent(jRadioButton1_Natural)))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(147, 147, 147)
-                                    .addComponent(jTextField_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(49, 49, 49)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jButton_Actualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jButton_Eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jButton_grabar, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addComponent(jButton_grabar, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(94, 94, 94)
+                                        .addComponent(jLabel1))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jLabel_contrasenia)
@@ -244,8 +247,9 @@ public class JIFClientGUI extends javax.swing.JInternalFrame {
                                     .addComponent(jTextField_paterno, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jTextField_nombres, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton1_Limpiar)))
-                        .addGap(67, 67, 67))
+                                .addComponent(jButton1_Limpiar)
+                                .addGap(11, 11, 11)))
+                        .addGap(56, 56, 56))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(41, 41, 41)
                         .addComponent(jLabel_nombre)
@@ -303,7 +307,9 @@ public class JIFClientGUI extends javax.swing.JInternalFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jRadioButton2_Juridica)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton_grabar)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton_grabar)
+                            .addComponent(jLabel1))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton_Actualizar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -514,6 +520,7 @@ public class JIFClientGUI extends javax.swing.JInternalFrame {
     private javax.swing.JButton jButton_Actualizar;
     private javax.swing.JButton jButton_Eliminar;
     private javax.swing.JButton jButton_grabar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel_codiog_cliente;
     private javax.swing.JLabel jLabel_contrasenia;
     private javax.swing.JLabel jLabel_materno;

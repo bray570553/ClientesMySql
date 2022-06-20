@@ -56,6 +56,7 @@ public class JIFWorkerGUI extends javax.swing.JInternalFrame {
         jButtonDelete = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTableWorkers = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
 
         jLabel_titulo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel_titulo.setForeground(new java.awt.Color(204, 102, 0));
@@ -230,6 +231,8 @@ public class JIFWorkerGUI extends javax.swing.JInternalFrame {
         });
         jScrollPane1.setViewportView(jTableWorkers);
 
+        jLabel1.setText("jLabel1");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -240,6 +243,10 @@ public class JIFWorkerGUI extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 529, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(48, 48, 48))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -250,7 +257,9 @@ public class JIFWorkerGUI extends javax.swing.JInternalFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(54, 54, 54)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(54, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -474,6 +483,7 @@ public class JIFWorkerGUI extends javax.swing.JInternalFrame {
     private javax.swing.JButton jButtonDelete;
     private javax.swing.JButton jButtonLimpiar;
     private javax.swing.JButton jButton_grabar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel_materno;
     private javax.swing.JLabel jLabel_nombre;
     private javax.swing.JLabel jLabel_nro;

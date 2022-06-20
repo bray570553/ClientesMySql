@@ -3,7 +3,7 @@ import java.sql.*;
 import javax.swing.JOptionPane;
 
 public class ConexionMysql {
-    
+    //
     Connection conexion=null;
         String userDB="root";
         String passwordDB="Poo_2022-1";
